@@ -1,32 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        body {
-            text-align: center;
-        }
-        div{
-            display: block;
-        }
-    </style>
-    </head>
-<body style="background-color:aquamarine; padding: 40px; text-align: center;">
-    <div style="background-color: bisque; padding: 20px; margin-bottom: 20px; height: 300px;">
-        <img src="c:\Users\HP\Desktop\lilies.webp" width="80%" height="300px" alt="resim">
-    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!DOCTYPE html>
+    <html lang="tr">
+</head>
+<meta charset="UTF-8">
+<style>
+    /* karrtların yanyana dizilmesi için container */
+    .cards{
+        display: flex;
+        gap:15px;
+        padding:20px;
+    }
 
-    <div class="div2" style="background-color:rgb(224, 86, 167); padding: 15px; height: 200px;">
-        <table style="border:1px solid black; width: 100%;">
-            <tr>
-                <td>Eren</td>
-                <td>Gülçin</td>
-                <td>Yasemin</td>
-                <td>Cemre</td>
-            </tr>
-                
-            
-        </table>
+    /*kartın ana kutusu*/
+    .cards{
+        width:300px;
+        border:1px solid orangered;
+        background-color: grey;
+        display: flex;
+        flex-direction: row;
+    }
+    /*resmin kutuyu kaplaması için*/
+    .card img{
+        width:100%;
+        height:auto;
+        border-bottom:1px solid black;
+        flex-direction: row;
+    }
+
+    .head{
+        padding: 5px 10px;
+    }
+
+    .head a {
+        color:red;
+        text-decoration: underline;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .content{
+        padding:10px;
+        font-size: 12px;
+        color: darkgreen;
+        flex-grow: 1;  /*metin az olsada kutunun dolgun görünmesini sağlar*/
+    }
+
+
+    .head a:hover{
+        color:blue;
+    }
+</style>
+</head>
+<body>
+
+
+    <div class="cards">
+        <div class="card">
+            <img src="c:\Users\HP\Desktop\köpek.jpg" alt="köpek">
+            <div class="head">
+                <a href="https://www.google.com/search?sca_esv=4ce11e3431185f77&sxsrf=AE3TifOTeDh1tvkKlqx6o0nuOrLosfFDbQ:1766093774584&udm=2&fbs=AIIjpHwSU0Xn4FRaYzhfgs1jmQvOnw1dDD9iiBulB2fsjeHv6XuKgDzU9KpxZMcpsjQNb1WcUrMDj8VH-V1nlIcqw5935Gn1-fxYUUWljmnUGtxDQcuhrB9zvGP-hoRwuNwfKsGmRGfYH61HCwFPJnrtBRwPUDfsD02wCXW4yu7A6fUSPJbzmQEH6C57gT6BPkdyn-GMlWObrYH0d93TWbG3mRemJys13yPbTIRHsga8qK5rS0_PRqE9iLzhJUPx0KbHSY9vXmsb&q=toy+poodle&sa=X&sqi=2&ved=2ahUKEwik2MuAjMiRAxWJRvEDHW6JPYgQtKgLegQIHRAB&biw=1280&bih=593&dpr=1.5#sv=CAMSVhoyKhBlLURMRnU4NnVGbmxwV25NMg5ETEZ1ODZ1Rm5scFduTToOMWViVGljY2dITjdja00gBCocCgZtb3NhaWMSEGUtRExGdTg2dUZubHBXbk0YADABGAcgyJ3MXDACSgoIAhACGAIgAigC">köpek</a>
+            </div>
+            <div class="content"
+            <p>köpkler sadık ve sevecen canlılardır.</p>
+        </div>
     </div>
+    <div class="card">
+        <img src="c:\Users\HP\Desktop\köpek.jpg" alt="köpek">
+        <div class="head">
+            <a href="https://www.google.com/search?sca_esv=4ce11e3431185f77&sxsrf=AE3TifOTeDh1tvkKlqx6o0nuOrLosfFDbQ:1766093774584&udm=2&fbs=AIIjpHwSU0Xn4FRaYzhfgs1jmQvOnw1dDD9iiBulB2fsjeHv6XuKgDzU9KpxZMcpsjQNb1WcUrMDj8VH-V1nlIcqw5935Gn1-fxYUUWljmnUGtxDQcuhrB9zvGP-hoRwuNwfKsGmRGfYH61HCwFPJnrtBRwPUDfsD02wCXW4yu7A6fUSPJbzmQEH6C57gT6BPkdyn-GMlWObrYH0d93TWbG3mRemJys13yPbTIRHsga8qK5rS0_PRqE9iLzhJUPx0KbHSY9vXmsb&q=toy+poodle&sa=X&sqi=2&ved=2ahUKEwik2MuAjMiRAxWJRvEDHW6JPYgQtKgLegQIHRAB&biw=1280&bih=593&dpr=1.5#sv=CAMSVhoyKhBlLURMRnU4NnVGbmxwV25NMg5ETEZ1ODZ1Rm5scFduTToOMWViVGljY2dITjdja00gBCocCgZtb3NhaWMSEGUtRExGdTg2dUZubHBXbk0YADABGAcgyJ3MXDACSgoIAhACGAIgAigC">köpek</a>
+        </div>
+        <div class="content">
+            <p>köpekler sadık ve svecen canlılardır.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="c:\Users\HP\Desktop\köpek.jpg" alt="köpek">
+        <div class="head">
+            <a href="https://www.google.com/search?sca_esv=4ce11e3431185f77&sxsrf=AE3TifOTeDh1tvkKlqx6o0nuOrLosfFDbQ:1766093774584&udm=2&fbs=AIIjpHwSU0Xn4FRaYzhfgs1jmQvOnw1dDD9iiBulB2fsjeHv6XuKgDzU9KpxZMcpsjQNb1WcUrMDj8VH-V1nlIcqw5935Gn1-fxYUUWljmnUGtxDQcuhrB9zvGP-hoRwuNwfKsGmRGfYH61HCwFPJnrtBRwPUDfsD02wCXW4yu7A6fUSPJbzmQEH6C57gT6BPkdyn-GMlWObrYH0d93TWbG3mRemJys13yPbTIRHsga8qK5rS0_PRqE9iLzhJUPx0KbHSY9vXmsb&q=toy+poodle&sa=X&sqi=2&ved=2ahUKEwik2MuAjMiRAxWJRvEDHW6JPYgQtKgLegQIHRAB&biw=1280&bih=593&dpr=1.5#sv=CAMSVhoyKhBlLURMRnU4NnVGbmxwV25NMg5ETEZ1ODZ1Rm5scFduTToOMWViVGljY2dITjdja00gBCocCgZtb3NhaWMSEGUtRExGdTg2dUZubHBXbk0YADABGAcgyJ3MXDACSgoIAhACGAIgAigC">köpek</a>
+
+        </div>
+        <div class="content">
+            <p>köpekler sadık ve sevecen canlılardır.</p>
+        </div>
+    </div>
+</div>
     
 </body>
 </html>
