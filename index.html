@@ -1,44 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="*" method="post">
-        Enter your name <input type="text" name="" id="" > <br><br>
-        password:<input type="password" name="password" id=""> <br><br>
-        <input type="radio" name="gender" value="male" > Male
-        <input type="radio" name="gender" value="female" > Female <br><br>
 
-        <select name="clothes" id="">
-            <option value="Zara"> Zara</option>
-            <option value="Bershka"> Bershka</option>
-            <option value="Massimo Dutti"> Massimo Dutti</option>
-            <option value="Stradivarius"> Stradivarius</option>
-        </select> <br><br>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="images/WhatsApp Image 2026-01-08 at 15.40.06.jpeg" alt="Logo" class="logo">
+            <span class="name">Simay Aksakal</span>
+        </div>
 
-        <textarea name="message" cols="30" rows="10" >
-            Enter text here... </textarea> <br>
+        <ul class="nav-menu">
+            <li><a href="#about">Hakkımda</a></li>
+            <li><a href="#projects">Becerilerim</a></li>
+            <li><a href="#contact">İletişim</a></li>
+        </ul>
+    </nav>
 
-            <input type="file" name="myfile"> <br><br>
-            <input type="date" name="bdaytime" > <br><br>
-            <input type="text" >
+    <!-- CONTENT -->
+    <div class="container">
+
+        <div class="box" id="about">
+            <h2>Hakkımda</h2>
+            
+<p>
+    Yönetim Bilişim Sistemleri (MIS) 3. sınıf öğrencisi olarak, yazılım ve işletme dünyasının
+    kesişim noktasında yer almanın sunduğu çok yönlü bakış açısını benimseyerek
+    kendimi bu alanda geliştirmeyi hedefliyorum. Eğitim sürecimde hem teknik hem de
+    yönetsel dersler alarak yazılım, veri, dijital pazarlama ve iş süreçleriyle
+    iç içe bir öğrenme deneyimi edindim.
+    <br><br>
+    Yazılım dersleri sayesinde teknik altyapımı güçlendirirken; işletme ve
+    yönetim odaklı dersler aracılığıyla analitik düşünme, stratejik planlama ve
+    problem çözme becerilerimi geliştirdim. Bu disiplinlerin bir arada ilerlemesi,
+    teknoloji ile iş dünyası arasında köprü kurabilen bir bakış açısı kazanmamı sağladı.
+    <br><br>
+    Sürekli öğrenmeye açık, kendini geliştirmeyi önemseyen ve çok yönlü çalışmayı
+    seven bir öğrenci olarak, gelecekte teknoloji odaklı iş alanlarında aktif rol
+    almayı ve bu alanda uzmanlaşmayı amaçlıyorum.
+</p>
 
 
+        </div>
+        <div class="box">
+            <h2>Becerilerim</h2>
+            <ul>
+                <li>HTML(Temel seviye)</li>
+                <li>CSS(Temel seviye)</li>
+                <li>Java(Temel seviye)</li>
+                <li>MySQL(Temel seviye)</li>
+                <li>C(Temel seviye)</li>
+            </ul>
+        </div>
 
-            <input type="submit" value="send" id="">
-            <input type="reset" name="reset" id="">
+        <div class="box" id="İletişim">
+            <h2>İletişim</h2>
 
+            <div class="social">
+                <a href="https://www.instagram.com/simayaksl/" target="_blank">
+                    <img src="images/instagram.jfif" alt="Instagram">
+                </a>
 
+                <a href="https://www.linkedin.com/in/simay-aksakal-3a0582268" target="_blank">
+                    <img src="images/linkedin.png" alt="Linkedin">
+                </a>
 
+                <a href="https://github.com/simayaksakal" target="_blank">
+                    <img src="images/github.png" alt="Github">
+                </a>
+            </div>
+        </div>
 
+    </div>
 
-
-
-    </form>
-
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Simay Aksakal </p>
+    </footer>
 
 </body>
 </html>
+

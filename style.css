@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montsrrat", Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: #c3e5eb;
+    color: #396d8f;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #8ba0f3;
+    margin: 20px auto;
+    padding: 15px 30px;
+    max-width: 1100px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    color: #f2f5f7;
+}
+
+/* NAV MENU */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ebf0f4;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #5170a5;
+}
+
+/* CONTENT */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* BOX */
+.box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.box h2 {
+    font-size: 22px;
+    margin-bottom: 18px;
+    color: #2981ab;
+    border-bottom: 2px solid #5489ca;
+    padding-bottom: 10px;
+}
+
+.box p {
+    line-height: 1.7;
+    font-size: 15.5px;
+}
+
+/* SOCIAL */
+.social {
+    display: flex;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.social img {
+    width: 42px;
+    transition: transform 0.3s ease;
+}
+
+.social img:hover {
+    transform: scale(1.15);
+}
+
+/* FOOTER */
+footer {
+    margin: 40px auto 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #5a1f2a;
+}
+
+    </style>
